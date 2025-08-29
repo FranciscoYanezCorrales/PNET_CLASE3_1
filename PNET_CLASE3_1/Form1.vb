@@ -1,12 +1,12 @@
 ﻿Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Cargar las operaciones en el ComboBox
+
         cmbOperacion.Items.Add("Suma")
         cmbOperacion.Items.Add("Resta")
         cmbOperacion.Items.Add("Multiplicación")
         cmbOperacion.Items.Add("División")
-        cmbOperacion.SelectedIndex = 0 ' Valor inicial
+        cmbOperacion.SelectedIndex = 0
     End Sub
 
     Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
@@ -42,10 +42,8 @@
         End Select
 
         ' Mostrar resultado
-        MsgBox("El resultado es: " & resultado.ToString())
+        MsgBox("El resultado es: " & resultado.ToString(), MsgBoxStyle.Information, "Resultado")
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
-    End Sub
 End Class
