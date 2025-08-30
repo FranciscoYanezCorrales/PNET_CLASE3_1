@@ -6,7 +6,7 @@
         cmbOperacion.Items.Add("Resta")
         cmbOperacion.Items.Add("Multiplicación")
         cmbOperacion.Items.Add("División")
-        cmbOperacion.SelectedIndex = 0
+        cmbOperacion.SelectedIndex = 3
     End Sub
 
     Private Sub btnCalcular_Click(sender As Object, e As EventArgs) Handles btnCalcular.Click
@@ -42,7 +42,7 @@
         End Select
 
         ' Mostrar resultado
-        MsgBox("El resultado es: " & resultado.ToString(), MsgBoxStyle.Information, "Resultado")
+        MsgBox("El resultado es: " & resultado.ToString(), MsgBoxStyle.Information, "Resultado Operacion")
     End Sub
 
 
